@@ -48,18 +48,18 @@
   * I like the clean look of this Universities' webpage. Many of the other University webpages linked to FESC's webpage in the footer were confusing and cluttered. 
   * Large main Picture which encompasses the website's main purpose. Navigation bar is clearly presented at the top of the page, and the footer included relevent links 
 
-2. Chevron.com 
+2. www.Chevron.com 
   * I took a look at number of company websites which deal in energy resources. They all had the same pattern of a clear, clean look. 
   * All content was centered on the page.  
   * Nothing flashy, just the key links to carefully chosen topics. 
   * Content centered on the webpage, with white background 
 
-3. BP.com 
+3. www.BP.com 
   * BP's website had a similar layout to Chevron, and Exxon's. 
   * All content is centered on the webpage, with white background. 
    
 
-4. Exxon.com 
+4. www.Exxon.com 
   * content centered on screen with light gray background 
   * simple layout with most content located in the navigation bar at the top of the webpage. 
   * Large clickable pictures stacked vertically allow the user to select what interests them. 
