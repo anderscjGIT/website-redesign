@@ -5,14 +5,22 @@
 
 # Site Design 
 
-
+## Design plan
+  * I plan to keep the overall webpage design simple. The color scheme will incorporate dark blue, dark gray, on white, for the most part. Some green will be placed sparingly. 
+  The old design suffered from a tired,clumsy and cluttered look. The new design will be clean and easy on the eyes. All content will be centered on the screen. 
 
 ## Colors  
   * Darkblue for navigation bar
   * light gray background for body
   * white background for header
   * incoporate dark to light green in images 
-  * white - darkblue/lightblue -  darkgreen/light green 
+  * Colors used: 
+      * Dark blue
+      * dark gray
+      * dark green
+      * light green
+      * lightgray
+      * white
 
 
 ## Typography 
@@ -31,7 +39,7 @@
 
 ###   Which compontents will be different 
  1. Articles 
- 2. form
+ 2. Secondary nav bar 
 
 
 ## Screenshots of 4 website designs that are inspiring 
