@@ -7,7 +7,7 @@
 
 
 
-## Colors - 
+## Colors  
   * Darkblue for navigation bar
   * light gray background for body
   * white background for header
@@ -15,13 +15,13 @@
   * white - darkblue/lightblue -  darkgreen/light green 
 
 
-## Typography - 
+## Typography 
 
 ### Font types of interest 
   * The font type selected is "Muli" which is sourced from Google Fonts 
 
 
-## Layout - 
+## Layout 
 
 ###  Which components will be the same on each page 
 
