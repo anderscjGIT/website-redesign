@@ -8,9 +8,12 @@
 <meta charset="UTF-8">
 
 <title> Energy Industry</title>
-<link rel="stylesheet" type="text/css" href="reset-css.css">
+
+
+<link rel="stylesheet" type="text/css" href="reset-css.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="new-styles.css"> 
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 <!-- Facebook meta tags --> 
 <!-- Facebook's recommendation of a minimum dimension of 1200x630 pixels and an aspect ratio of 1.91:1 -->
@@ -29,6 +32,10 @@
   <meta name="twitter:description"  content="Florida Energy Systems Consortium Homepage">
   <meta name="twitter:image"        content="https://www.publicdomainpictures.net/pictures/10000/velka/87-12681332789SQ8.jpg">
   <meta name="twitter:card"         content="summary_large_image">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -56,6 +63,10 @@
 <div class="main-div"> 
   
    
+<div class="container-collapse">
+  
+  <button type="button" id="buttonz" class="btn btn-info" data-toggle="collapse" data-target="#demo">Additional Links</button>
+<div id="demo" class="collapse">
 
 <ul class="second-nav-bar">
   <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/enegy-efficiency/">Energy Efficiency</a></li>
@@ -81,7 +92,8 @@
   <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/education-energy-opportunities/">Educational &amp; Professional Energy Opportunities</a></li>
   <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/other/">Other</a></li>
 </ul>  
-
+</div>
+</div>
 
 
 <h1> Energy Industry</h1>
@@ -107,22 +119,25 @@ Please click the sub-menus on the left to see the Florida Energy Industry list. 
 </article>
 
 
-<footer>
+<footer id="id-footer"> 
 
 <ul class="ul-footer">
-  <li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
-  <li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
-  <li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
-  <li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
-  <li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
-  <li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
-  <li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
-  <li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
-  <li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
-  <li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
-  <li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
+
+<li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
+<li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
+<li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
+<li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
+<li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
+<li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
+<li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
+<li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
+<li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
+<li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
+<li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
 </ul>
 
+
+</footer>
 
 <p> 
 Copyright &copy; 2008-2018 Florida Energy Systems Consortium.<br>
@@ -131,6 +146,8 @@ All rights reserved
 <a href="#">Site Map</a>
 </p>
 
+
+<div class="share-buttons">
 
 <!-- Facebook share button  -->
 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=box_count&size=large&mobile_iframe=true&width=73&height=58&appId" width="73" height="58" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -142,9 +159,9 @@ All rights reserved
 Tweet</a>
 
 <!-- Tumblr share button -->
-<iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="20" width="65" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
-</footer>
+<iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="40" width="100" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
 
+</div>
 
 
 
