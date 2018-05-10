@@ -13,8 +13,8 @@ body {
   background-color: white; }
 
 #fesc-logo {
-  width: 15rem;
-  height: 6rem; }
+  width: 20rem;
+  height: 10rem; }
 
 header {
   background-color: white;
@@ -37,6 +37,9 @@ nav ul li a {
   text-decoration: none;
   padding: .5rem 1rem;
   margin: 1px; }
+
+section {
+  margin: 0 5%; }
 
 .container {
   display: -webkit-box;

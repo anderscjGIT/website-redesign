@@ -16,8 +16,8 @@ body {font-family: 'Muli', sans-serif;
 
            }
 
-#fesc-logo{ width: 15rem; 
-	        height: 6rem; 
+#fesc-logo{ width: 20rem; 
+	        height: 10rem; 
 	      }
 
 
@@ -43,9 +43,10 @@ nav ul li a { color: rgb(241,241,241);
     text-decoration: none;
     padding: .5rem 1rem;
     margin: 1px; 
-    
+    }
 
-  }
+
+section {margin: 0 5%}
 
 .container { display: flex;
 	         flex-direction: row;
