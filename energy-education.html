@@ -98,10 +98,13 @@
       <td> <img alt="classroom-image" class="stock-images" src="https://www.energy.gov/sites/prod/files/styles/borealis_article_hero_respondxl/public/photo10-lg_1.jpg?itok=1sqH5aP1" ></td> 
       <td> <img alt="classroom-image" class="stock-images" src="https://images.steelcase.com/image/upload/c_fill,dpr_auto,q_70,h_656,w_1166/v1415700220/www.steelcase.com/12-00014261.jpg" ></td>
       <td> <img alt="classroom-image" class="stock-images" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ffarm3.staticflickr.com%2F2069%2F2814710002_711e3b2d82.jpg&f=1" ></td>
-
     </tr>
   </tbody>
 </table>
+
+
+<div id="chart_div"></div>
+
 <p>
 Energy Education/ Energy Jobs
 image00111
@@ -168,13 +171,6 @@ Tweet</a>
 
 </div>
 
-
-
-
-
-
-
-
 <!-- Facebook javascript --> 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -206,5 +202,101 @@ Tweet</a>
 
 
 </div>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+  google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawLogScales);
+
+function drawLogScales() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Billion Btu');
+      
+
+      data.addRows([
+          
+        [2015,234192],
+        [2014,226863],
+        [2013,229666],
+        [2012,220020],
+        [2011,222956],
+        [2010,223518],
+        [2009,213642],
+        [2008,195232],
+        [2007,190489],
+        [2006,185564],
+        [2005,183175],
+        [2004,179462],
+        [2003,188473],
+        [2002,174327],
+        [2001,158038],
+        [2000,194952],
+        [1999,204114],
+        [1998,205485],
+        [1997,231308],
+        [1996,240343],
+        [1995,220211],
+        [1994,215563],
+        [1993,217028],
+        [1992,230779],
+        [1991,212955],
+        [1990,198986],
+        [1989,232261],
+        [1988,113802],
+        [1987,107606],
+        [1986,116356],
+        [1985,110698],
+        [1984,108740],
+        [1983,91705],
+        [1982,104674],
+        [1981,83117],
+        [1980,90049],
+        [1979,69419],
+        [1978,65357],
+        [1977,59953],
+        [1976,56507],
+        [1975,50007],
+        [1974,52429],
+        [1973,56250],
+        [1972,54389],
+        [1971,49968],
+        [1970,51035],
+        [1969,51489],
+        [1968,49556],     
+        [1967,44550],
+        [1966,42760],
+        [1965,39916],
+        [1964,39016],
+        [1963,38613],
+        [1962,35826],
+        [1961,34417],
+        [1960,35680]
+
+      ]);
+
+      var options = {
+        title: 'Renewable Energy Production Florida',
+        hAxis: {
+          title: 'Year',
+          logScale: true,
+          format: '####.##',
+          width: 400,
+      },
+        vAxis: {
+          title: 'Billion Btu',
+          logScale: false,
+          format: '#,###.##'
+        },
+        colors: ['#a52714', '#097138']
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+
+      var formatter = new google.visualization.NumberFormat({pattern:'####'});
+          formatter.format(data,1);
+      }
+ </script>
 </body>
 </html> 
