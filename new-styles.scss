@@ -1,10 +1,23 @@
 
 
+
+$font-stack: 'Muli', sans-serif; 
+$background-color-gray: #f4f4f4; 
+
+
+
+
+
+
+
+
+
+
 html{ height: 100%;}
 
 
-body {font-family: 'Muli', sans-serif;
-      background-color: #f4f4f4;
+body {font: $font-stack;
+      background-color: $background-color-gray;
       padding: 0;
       margin: 0;
       }

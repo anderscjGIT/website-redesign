@@ -2,7 +2,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font: "Muli", sans-serif;
   background-color: #f4f4f4;
   padding: 0;
   margin: 0; }
