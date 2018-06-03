@@ -60,12 +60,11 @@ section {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.container li a:hover {
-  color: #000000;
-  text-decoration: none;
-  background-color: #ffa500;
-  border-radius: 5%; }
+  .container a:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffa500;
+    border-radius: 5%; }
 
 footer {
   background-color: #00008B;
@@ -84,10 +83,9 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
-
-.ul-footer img {
-  width: 80px;
-  height: 60px; }
+  .ul-footer img {
+    width: 80px;
+    height: 60px; }
 
 .second-nav-bar {
   padding: 1rem;
@@ -99,23 +97,20 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #6b6d6f; }
-
-.second-nav-bar li a {
-  color: #f1f1f1;
-  text-decoration: none;
-  -webkit-transition: font-size 1s;
-  transition: font-size 1s; }
-
-.second-nav-bar li {
-  line-height: 5px; }
+  .second-nav-bar a {
+    color: #f1f1f1;
+    text-decoration: none;
+    -webkit-transition: font-size 1s;
+    transition: font-size 1s; }
+  .second-nav-bar a:hover {
+    color: #ffa500;
+    font-size: 2rem; }
+  .second-nav-bar li {
+    line-height: 5px; }
 
 #buttonz {
   color: white;
   background-color: #ffa500; }
-
-.second-nav-bar li a:hover {
-  color: #ffa500;
-  font-size: 2rem; }
 
 .photos-videos {
   display: -webkit-box;
