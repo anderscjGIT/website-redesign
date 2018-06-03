@@ -10,7 +10,7 @@ body {
 .main-div {
   margin: 0 25%;
   height: 100%;
-  background-color: white; }
+  background-color: #ffffff; }
 
 #fesc-logo {
   width: 20rem;
@@ -23,29 +23,27 @@ body {
   .nav-container {
     padding-bottom: 15rem; } }
 header {
-  background-color: white;
+  background-color: #ffffff;
   height: 15%; }
 
 nav {
-  background-color: darkblue;
+  background-color: #00008B;
   width: 100%;
   height: 4rem; }
-
-nav ul {
-  height: 4rem; }
+  nav ul {
+    height: 4rem; }
+  nav a {
+    color: #F1F1F1;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: 1px; }
 
 ul li {
   list-style-type: none;
   margin-top: 1.5rem; }
-
-nav ul li a {
-  color: #f1f1f1;
-  text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
-  margin: 1px; }
 
 section {
   margin: 0 5%; }
@@ -64,13 +62,13 @@ section {
       justify-content: space-around; }
 
 .container li a:hover {
-  color: black;
+  color: #000000;
   text-decoration: none;
-  background-color: orange;
+  background-color: #ffa500;
   border-radius: 5%; }
 
 footer {
-  background-color: darkblue;
+  background-color: #00008B;
   height: 15%; }
 
 .ul-footer {
@@ -92,9 +90,7 @@ footer {
   height: 60px; }
 
 .second-nav-bar {
-  padding: 1rem; }
-
-.second-nav-bar {
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,10 +111,10 @@ footer {
 
 #buttonz {
   color: white;
-  background-color: orange; }
+  background-color: #ffa500; }
 
 .second-nav-bar li a:hover {
-  color: orange;
+  color: #ffa500;
   font-size: 2rem; }
 
 .photos-videos {
