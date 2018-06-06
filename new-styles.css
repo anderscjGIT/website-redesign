@@ -159,4 +159,8 @@ tr {
   width: 230px;
   height: 184px; }
 
+iframe {
+  border: none;
+  overflow: hidden; }
+
 /*# sourceMappingURL=new-styles.css.map */

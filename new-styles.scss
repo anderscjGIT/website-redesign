@@ -112,27 +112,26 @@ footer {
         }
 
 .second-nav-bar {
-               padding: 1rem;
-               display: flex; 
-	             flex-direction: column;
-	             background-color: $background-color-darkgray;
+         padding: 1rem;
+         display: flex; 
+	       flex-direction: column;
+	       background-color: $background-color-darkgray;
 
+       a { 
+         color: rgb(241,241,241);
+         text-decoration: none;
+         transition: font-size 1s; 
+        }
 
-             a { 
-                     color: rgb(241,241,241);
-                     text-decoration: none;
-                     transition: font-size 1s; 
-              }
+       a:hover {
+          color: $background-color-orange; 
+          font-size: 2rem;
+        }         
 
-             a:hover {
-                color: $background-color-orange; 
-                font-size: 2rem;
-              }         
-
-            li { 
-               line-height: 5px;
-              }                      
-            }
+      li { 
+         line-height: 5px;
+        }                      
+      }
 
 #buttonz { 
         color: white;
@@ -178,5 +177,11 @@ tr {
 .stock-images { 
              width: 230px; 
              height: 184px 
+}
+
+iframe {  
+  border:none;
+  overflow:hidden
+
 }
                  

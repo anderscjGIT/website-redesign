@@ -1,18 +1,36 @@
 
 
 
-Vue.component('welcome', {
-    template: '<h1>Welcome to FESC Homepage!</h1>' 
 
+Vue.component('navnav', {
+	template: '#navigation-container'
 }); 
 
-var app = new Vue({
- el: '#app',
+	
+var nav = new Vue({
+ el: '#nav-cont',
  
 });
 
 
-var fb-tw = new Vue({
-  el: '#fbtwitter'
+var app = new Vue({
+   el: '#heading-home',
+   data: {
+     message: "Energy Education and Energy Jobs"
+   }
+})
 
+
+var app = new Vue({
+   el: '#heading-industry',
+   data: {
+     message: "Energy Industry"
+   }
+})
+
+var app = new Vue({
+   el: '#heading-education',
+   data: {
+     message: "Energy Education"
+   }
 })

@@ -29,10 +29,14 @@
 <body>
   <header>
     <img id="fesc-logo" alt="FESC Logo" src="images/FESC_Logo.jpg"> 
-
-
   </header>
-    <nav class="nav-container">
+    
+<div id='nav-cont'> 
+      <navnav></navnav>
+    </div>
+
+<template id="navigation-container">
+     <nav class="nav-container" id="nav-cont">
        <ul class="container">
          <li><a href="index.html">Homepage</a></li>
          <li><a href="energy-industry.html">Energy Industry</a></li> 
@@ -43,35 +47,35 @@
          <li><a href="#">Advisory Board</a></li>
          <li><a href="#">Contact Us</a></li>
        </ul>
-     </nav>
-
+    </nav>
+  </template> 
 
 <div class="main-div"> 
-  
-<div class="container-collapse">
-  
-  <button type="button" id="buttonz" class="btn btn-info" data-toggle="collapse" data-target="#demo">Additional Links</button>
-<div id="demo" class="collapse">
-
-<ul class="second-nav-bar">
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-literacy/">Energy Literacy</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-certificate-uf-edge-program/" rel="nofollow">Energy Certificate – UF EDGE Program</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-discipline-2/">Energy Education by Discipline</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-institution/">Energy Education by Institution</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/free-online-courses/">Free Online Courses</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/educational-programsworkshops/">Educational Programs and Workshops</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-discipline/">FESC Educational Projects</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-jobs/">Energy Jobs</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/nuclear-training-reactor-at-uf/">Nuclear Training Reactor at UF</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-extension-service/">Energy Extension Service</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/energy-education/demonstrations/">Demonstrations</a></li>
-</ul>
+  <div class="container-collapse">
+    <button type="button" id="buttonz" class="btn btn-info" data-toggle="collapse" data-target="#demo">Additional Links</button>
+     <div id="demo" class="collapse">
+       <ul class="second-nav-bar">
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-literacy/">Energy Literacy</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-certificate-uf-edge-program/" rel="nofollow">Energy Certificate – UF EDGE Program</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-discipline-2/">Energy Education by Discipline</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-institution/">Energy Education by Institution</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/free-online-courses/">Free Online Courses</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/educational-programsworkshops/">Educational Programs and Workshops</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-discipline/">FESC Educational Projects</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-jobs/">Energy Jobs</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/nuclear-training-reactor-at-uf/">Nuclear Training Reactor at UF</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-extension-service/">Energy Extension Service</a></li>
+         <li><a href="http://floridaenergy.ufl.edu/energy-education/demonstrations/">Demonstrations</a></li>
+       </ul>
+   </div>
 </div>
-</div>
-
 
 <section>
-<H1> Energy Education </H1>
+
+<div id="heading-education">
+   <h1> {{ message }} </h1>
+</div>  
+
 
 <article>
 
@@ -108,27 +112,20 @@ At the University level, programming includes a curriculum directed at the nucle
 </article>
 </section>
 
-
-
-
 <footer id="id-footer"> 
-
-<ul class="ul-footer">
-
-<li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
-<li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
-<li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
-<li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
-<li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
-<li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
-<li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
-<li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
-<li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
-<li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
-<li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
-</ul>
-
-
+  <ul class="ul-footer">
+    <li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
+    <li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
+    <li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
+    <li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
+    <li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
+    <li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
+    <li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
+    <li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
+    <li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
+    <li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
+    <li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
+  </ul>
 </footer>
 
 <p> 
@@ -140,19 +137,17 @@ All rights reserved
 
 
 <div class="share-buttons">
-
-<!-- Facebook share button  -->
-<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=box_count&size=large&mobile_iframe=true&width=73&height=58&appId" width="73" height="58" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-<!-- Twitter share button  -->
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello?20world"
-  data-size="large">
-Tweet</a>
-
-<!-- Tumblr share button -->
-<iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="40" width="100" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
-
+   <!-- Facebook share button  -->
+  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=box_count&size=large&mobile_iframe=true&width=73&height=58&appId" width="73" height="58" ></iframe>
+  
+  <!-- Twitter share button  -->
+  <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Hello?20world"
+    data-size="large">
+  Tweet</a>
+  
+  <!-- Tumblr share button -->
+  <iframe class="btn" height="40" width="100" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
 </div>
 
 <!-- Facebook javascript --> 
@@ -183,11 +178,9 @@ Tweet</a>
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
-
-
 </div>
 
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <script>
   google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawLogScales);
@@ -281,11 +274,8 @@ function drawLogScales() {
       var formatter = new google.visualization.NumberFormat({pattern:'####'});
           formatter.format(data,1);
       }
- </script>
-
- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
- <script src="florida-energy.js"></script>>
-
-</body>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="florida-energy.js"></script>>
+  </body>
 </html> 

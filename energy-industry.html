@@ -31,7 +31,14 @@
 <header>
   <img id="fesc-logo" alt="FESC Logo" src="images/FESC_Logo.jpg"> 
 </header>
-  <nav class="nav-container">
+
+
+<div id='nav-cont'> 
+      <navnav></navnav>
+    </div>
+
+<template id="navigation-container">
+     <nav class="nav-container" id="nav-cont">
        <ul class="container">
          <li><a href="index.html">Homepage</a></li>
          <li><a href="energy-industry.html">Energy Industry</a></li> 
@@ -43,45 +50,47 @@
          <li><a href="#">Contact Us</a></li>
        </ul>
     </nav>
+  </template> 
 
 <div class="main-div"> 
-  
-   
-<div class="container-collapse">
+  <div class="container-collapse">
   
   <button type="button" id="buttonz" class="btn btn-info" data-toggle="collapse" data-target="#demo">Additional Links</button>
-<div id="demo" class="collapse">
-
-<ul class="second-nav-bar">
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/enegy-efficiency/">Energy Efficiency</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/smart-grid/">Energy Crops</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/algae-2/">Algae</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/under-construction/">Biomass &amp; Biofuels</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/solar/">Solar</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/waste-to-energy/">Waste To Energy</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/energy-storage-2/">Smart Grid &amp; Power</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/energy-storage/">Energy Storage</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/information-technology/">Network &amp; Security</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/utilities-power/">Utilities, Electric &amp; Power</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/marine-2/">Marine</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/natural-gas/">Natural Gas</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/marine/">Wind</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/gas-oil-petroleum/">Gas Turbine, Oil &amp; Petroleum</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/water/">Water Purification</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/law/">Consulates &amp; Law</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/engineering-consulting/">Engineering Consulting</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/associations-organizations/">Associations &amp; Organizations</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/financing/">Energy Financing &amp; Funding</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/fl-university-spin-off/">FL University Spin-off</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/education-energy-opportunities/">Educational &amp; Professional Energy Opportunities</a></li>
-  <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/other/">Other</a></li>
-</ul>  
-</div>
+    <div id="demo" class="collapse">
+      <ul class="second-nav-bar">
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/enegy-efficiency/">Energy Efficiency</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/smart-grid/">Energy Crops</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/algae-2/">Algae</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/under-construction/">Biomass &amp; Biofuels</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/solar/">Solar</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/waste-to-energy/">Waste To Energy</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/energy-storage-2/">Smart Grid &amp; Power</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/energy-storage/">Energy Storage</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/information-technology/">Network &amp; Security</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/utilities-power/">Utilities, Electric &amp; Power</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/marine-2/">Marine</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/natural-gas/">Natural Gas</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/marine/">Wind</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/gas-oil-petroleum/">Gas Turbine, Oil &amp; Petroleum</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/water/">Water Purification</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/law/">Consulates &amp; Law</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/engineering-consulting/">Engineering Consulting</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/associations-organizations/">Associations &amp; Organizations</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/financing/">Energy Financing &amp; Funding</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/fl-university-spin-off/">FL University Spin-off</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/education-energy-opportunities/">Educational &amp; Professional Energy Opportunities</a></li>
+        <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/other/">Other</a></li>
+      </ul>  
+   </div>
 </div>
 
 <section>
 
-<h1> Energy Industry</h1>
+
+<div id="heading-industry">
+   <h1> {{ message }} </h1>
+</div>
+
 
 <article>
 <table> 
@@ -96,8 +105,6 @@
 </table>
 
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-
-
 <p> 	
 FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.
 
@@ -109,23 +116,19 @@ Please click the sub-menus on the left to see the Florida Energy Industry list. 
 </section>
 
 <footer id="id-footer"> 
-
-<ul class="ul-footer">
-
-<li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
-<li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
-<li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
-<li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
-<li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
-<li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
-<li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
-<li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
-<li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
-<li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
-<li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
-</ul>
-
-
+  <ul class="ul-footer">
+    <li><a href="http://www.fsu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_02.jpg" alt="Florida State University"></a></li>
+    <li><a href="http://www.ucf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_03.jpg" alt="University of Central Florida"></a></li>
+    <li><a href="http://www.usf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_04.jpg" alt="University of South Florida"></a></li>
+    <li><a href="http://www.famu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_05.jpg" alt="Florida Agricultural and Mechanical University"></a></li>
+    <li><a href="http://www.fau.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_06.jpg" alt="Florida Atlantic University"></a></li>
+    <li><a href="http://www.fgcu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_07.jpg" alt="Florida Gulf Coast University"></a></li>
+    <li><a href="http://www.fiu.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_08.jpg" alt="Florida International University"></a></li>
+    <li><a href="http://www.ncf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_09.jpg" alt="New College of Florida"></a></li>
+    <li><a href="http://www.unf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_10.jpg" alt="University of North Florida"></a></li>
+    <li><a href="http://www.uwf.edu" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_11.jpg" alt="University of West Florida"></a></li>
+    <li><a href="https://floridapolytechnic.org/" target="_blank"><img src="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/logo_12.jpg" alt="Florida Polytechnic University"></a></li>
+  </ul>
 </footer>
 
 <p> 
@@ -137,19 +140,17 @@ All rights reserved
 
 
 <div class="share-buttons">
-
-<!-- Facebook share button  -->
-<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=box_count&size=large&mobile_iframe=true&width=73&height=58&appId" width="73" height="58" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-<!-- Twitter share button  -->
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello?20world"
-  data-size="large">
-Tweet</a>
-
-<!-- Tumblr share button -->
-<iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="40" width="100" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
-
+  <!-- Facebook share button  -->
+  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=box_count&size=large&mobile_iframe=true&width=73&height=58&appId" width="73" height="58"></iframe>
+  
+  <!-- Twitter share button  -->
+  <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Hello?20world"
+    data-size="large">
+  Tweet</a>
+  
+  <!-- Tumblr share button -->
+  <iframe class="btn" height="40" width="100" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=staff&amp;color=blue"></iframe>
 </div>
 
 
@@ -185,8 +186,8 @@ Tweet</a>
 
 </div>
 
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
     google.charts.load("current", {packages:['corechart','bar']});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
@@ -287,7 +288,6 @@ Tweet</a>
   }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
   <script src="florida-energy.js"></script>>
-</body>
+  </body>
 </html> 
