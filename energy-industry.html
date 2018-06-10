@@ -25,6 +25,76 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+ <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(getData);
+
+      function drawBasic(newData) {
+        console.log("newData", newData)
+        newData.unshift(["Year", "Billion BTUs"])
+
+        var data = google.visualization.arrayToDataTable(newData);
+        
+        var options = {
+          title: 'Energy Production in Florida',
+          chartArea: {width: '50%'},
+          hAxis: {
+            title: 'BTUs',
+            minValue: 0
+          }
+        };      
+
+       var options = {
+        title: "Electricity Total Consumption for Florida",
+        width: 800,
+        //height: 400,
+        bar: {groupWidth: "50%"},
+        legend: { position: "none" 
+      },
+       
+        hAxis: {
+        title: 'Year',
+        logScale: true,
+        format: '####.##'
+      },
+        
+        vAxis: {
+          title: 'Billion Btu',
+          logScale: false,
+          format: '#,###.##'
+      }
+    };  
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_values'));
+
+        chart.draw(data, options);
+      }
+
+
+      function getData(){
+        // Create a new request object
+        let request = new XMLHttpRequest()
+        // TODO: URL to contact goes here
+        let requestUrl = "https://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.REPRB.FL.A"
+        // Open a connection
+        request.open('GET', requestUrl, true)
+        // Callback for when the request completes
+        request.onload = function(){
+          let theActualData = JSON.parse(request.response).series[0].data
+
+          drawBasic(theActualData)
+        }
+        // Callback for when there's an error
+        request.error = function(err){
+          console.log("error is: ", err)
+        }
+        // Send the request to the specified URL
+        request.send()
+      }
+  </script>
 </head>
 <body>
 
@@ -104,7 +174,7 @@
 </tbody>
 </table>
 
-<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+<div id="chart_values" style="width: 900px; height: 300px;"></div>
 <p> 	
 FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.
 
@@ -186,108 +256,10 @@ All rights reserved
 
 </div>
 
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script>
-    google.charts.load("current", {packages:['corechart','bar']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-         ["Year","Billion Btu", { role: "style" }],
-         [2016,804283,'#a52714'],
-         [2015,803865,'#a52714'],
-         [2014,771379,'#a52714'],
-         [2013,757189,'#a52714'],
-         [2012,752941,'#a52714'],
-         [2011,768009,'#a52714'],
-         [2010,788887,'#a52714'],
-         [2009,766848,'#a52714'],
-         [2008,771702,'#a52714'],
-         [2007,788461,'#a52714'],
-         [2006,778685,'#a52714'],
-         [2005,767622,'#a52714'],
-         [2004,745810,'#a52714'],
-         [2003,741696,'#a52714'],
-         [2002,718136,'#a52714'],
-         [2001,684966,'#a52714'],
-         [2000,668216,'#a52714'],
-         [1999,638966,'#a52714'],
-         [1998,639254,'#a52714'],
-         [1997,597240,'#a52714'],
-         [1996,586291,'#a52714'],
-         [1995,571483,'#a52714'],
-         [1994,544365,'#a52714'],
-         [1993,521176,'#a52714'],
-         [1992,501598,'#a52714'],
-         [1991,499299,'#a52714'],
-         [1990,489741,'#a52714'],
-         [1989,472473,'#a52714'],
-         [1988,444382,'#a52714'],
-         [1987,417862,'#a52714'],
-         [1986,398095,'#a52714'],
-         [1985,379307,'#a52714'],
-         [1984,353246,'#a52714'],
-         [1983,329216,'#a52714'],
-         [1982,315744,'#a52714'],
-         [1981,317921,'#a52714'],
-         [1980,309694,'#a52714'],
-         [1979,295551,'#a52714'],
-         [1978,289031,'#a52714'],
-         [1977,270767,'#a52714'],
-         [1976,252408,'#a52714'],
-         [1975,242096,'#a52714'],
-         [1974,235482,'#a52714'],
-         [1973,237104,'#a52714'],
-         [1972,209665,'#a52714'],
-         [1971,188564,'#a52714'],
-         [1970,171346,'#a52714'],
-         [1969,153032,'#a52714'],
-         [1968,135509,'#a52714'],
-         [1967,119314,'#a52714'],
-         [1966,108610,'#a52714'],
-         [1965,95878,'#a52714'],
-         [1964,87016,'#a52714'],
-         [1963,78258,'#a52714'],
-         [1962,71216,'#a52714'],
-         [1961,62705,'#a52714'],
-         [1960,57344,'#a52714']
-      ]);
+ 
 
-      var view = new google.visualization.DataView(data);
-      /*view.setColumns([0, 1,
-                       { calc: "stringify",
-                         sourceColumn: 1,
-                         type: "string",
-                         role: "annotation" },
-                       2]);*/
-
-
-
-      var options = {
-        title: "Electricity Total Consumption for Florida",
-        width: 800,
-        //height: 400,
-        bar: {groupWidth: "50%"},
-        legend: { position: "none" 
-      },
-        
-        hAxis: {
-        title: 'Year',
-        logScale: true,
-        format: '####.##'
-      },
-        
-        vAxis: {
-          title: 'Billion Btu',
-          logScale: false,
-          format: '#,###.##'
-      },
-
-      };
-      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-      chart.draw(view, options);
-  }
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="florida-energy.js"></script>>
+  <script src="florida-energy.js"></script>
+ 
   </body>
 </html> 
