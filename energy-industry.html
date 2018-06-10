@@ -48,9 +48,8 @@
         };      
 
        var options = {
-        title: "Electricity Total Consumption for Florida",
+        title: "Total energy consumption, Florida",
         width: 800,
-        //height: 400,
         bar: {groupWidth: "50%"},
         legend: { position: "none" 
       },
@@ -78,7 +77,7 @@
         // Create a new request object
         let request = new XMLHttpRequest()
         // TODO: URL to contact goes here
-        let requestUrl = "https://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.REPRB.FL.A"
+        let requestUrl = " http://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.TETCB.FL.A"
         // Open a connection
         request.open('GET', requestUrl, true)
         // Callback for when the request completes

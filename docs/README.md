@@ -8,7 +8,18 @@
 
  * https://developers.google.com/chart/interactive/docs/gallery/barchart
 
-# Energy-education.html - Chart library - Line Chart
+# Energy-education.html - Chart library - Area Chart
   * I chose a line chart for the second graph because of the dataset that needed to be displayed. The line chart provides the user will all the individual datasets in a visually pleasing graph. It provides a high level overview of the data trend. 
   
-  *https://developers.google.com/chart/interactive/docs/gallery/linechart
+  *https://developers.google.com/chart/interactive/docs/gallery/areachart
+  
+  
+  
+  
+# Florida Total Energy Consumption Chart API data found by clicking the link below
+
+  *https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A
+
+# Florida Renewable Energy Production Chart API data found by clicking the link below
+
+  *https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A
